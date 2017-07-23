@@ -108,10 +108,10 @@
 							url: ' https://opspress.cloud.tyk.io/request-beta-invite/',
 							data: {address: address, app: 'flexcalls'}
 						}).done(function() {
-								$('.message').addClass('success').html("You'll receive a beta invite soon");
+								$('.message').addClass('success visible').html("You'll receive a beta invite soon");
 						}).fail(function() {
-								$('.message').addClass('failure').html("Something went wrong. Please try again.");
-							});
+								$('.message').addClass('failure visible').html("Something went wrong. Please try again.");
+						});
 					});
 
 		})();
